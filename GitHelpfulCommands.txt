@@ -1,0 +1,77 @@
+Download and Install git
+
+git init #to initialise diectory for tracking
+Git status # to see the status
+git log # to see the last commits/err
+Git add --a
+Git commit -m “comments”
+.gitignore file holds all the file that should be ignored for tracking
+
+git diff #compares staging area with working area
+git diff --staged #compares staging with previous commit
+Git diff filename.txt
+Git diff –-stage filename.txt
+Git reset status
+Git checkout .
+Git checkout filename.txt
+
+git rm filename.txt
+git mv f1.txt f2.txt #rename or move the file
+
+git rm --cached filename.txt #To untrack already tracked file
+
+git commit -a -m "Direct commit maaro" # tracked file to commit directly without going to staging area
+
+git restore --staged # Unstage
+
+git pull # to refresh your local folders from remote
+
+rm -rf .git #to remove git repository
+
+git clone https://github.com/pandas-dev/pandas.git myPanda #to clone remote into local #we need to go to the folder and that would be added as git repo automatically
+
+git log -p -n #to see what all changed along with commits, n could number of last commits we want to see, like n=2
+
+git log --stat #short summary about last commits
+
+git log --pretty=oneline #one commit in one line
+
+
+git log --pretty=[short|Full] #short or full detail about commit in line
+
+git log --since=2.days #last 2 days of commit, 2.month, 2.week, 2.years
+
+git log --pretty=format:%h --%an # to see author name, ae for author email.. look for all format options in website
+
+git config --global alias.st status # alias
+git config --global alias.last 'log -p -1' #now to see last commit log we can query git last
+
+press q to exit
+
+Exit
+
+
+# Remote
+Pull - will fetch everything from remote repository
+Push - push incremental changes to remote
+
+git remote add origin https://github.com/IamAKhtar/GitOther.git # to map remote(gitHub) site to local
+
+git remote add origin https://github.com/IamAKhtar/Writing.git
+git remote # to check the status of remote directory
+
+git push -u origin master # Pushes the changes from local git to remote
+
+## Branching
+
+
+git checkout -b develop # -b to create new branch & checkout to switch to that branch
+
+git branch -v #to check last commit on the branch/master
+
+git branch --merged    #Already Merged
+git branch --no-merged #Not alreday merged
+git branch -d branchname #to delete the branch, for unmerge file to force delete we need to give -D.
+
+git pudh -d origin branchname #Will delete the branch from the remote repository
+
